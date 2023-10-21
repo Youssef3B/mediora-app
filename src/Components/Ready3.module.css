@@ -1,0 +1,35 @@
+.Ready3 {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.Ready3 .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.Ready3 .grid img {
+  width: 100%;
+}
+
+.Ready3 h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+.Ready3 h5 {
+  color: var(--primary-color);
+}
+.flex {
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.flex p {
+  margin-left: 10px;
+  font-weight: 700;
+  color: var(--color-text);
+}

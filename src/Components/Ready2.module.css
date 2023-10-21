@@ -1,0 +1,22 @@
+.Ready2 {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.Ready2 .grid {
+  background-color: var(--box);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Ready2 .grid h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+.Ready2 .grid span {
+  color: var(--primary-color);
+}

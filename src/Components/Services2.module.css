@@ -1,0 +1,64 @@
+.Services2 {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.Services2 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.Services2 img {
+  width: 88%;
+}
+.Services2 h3 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+.Services2 .card {
+  display: flex;
+  padding: 30px 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(181, 181, 181, 0.25) 0px 6px 12px -2px,
+    rgba(178, 178, 178, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 20px;
+}
+
+.Services2 .card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: -600px;
+  z-index: 2;
+  opacity: 0;
+  transition: left 0.3s, opacity 0.3s; /* Add a transition for a smooth effect */
+}
+
+.Services2 .card:hover::before {
+  /* Remove the space before ::before */
+  left: 0; /* Change from "00px" to "0" */
+  z-index: 2;
+  opacity: 1; /* Change from 0 to 1 to make it visible */
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.Services2 .card h5 {
+  margin-left: 14px;
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: var(--primary-color);
+}
+.Services2 .card p {
+  margin-left: 14px;
+  color: var(--color-text2);
+  font-style: italic;
+}

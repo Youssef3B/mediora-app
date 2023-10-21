@@ -1,0 +1,31 @@
+.ClientsSection {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-bottom: 60px;
+}
+.card {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+.ClientsSection h2 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--color-text);
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.card h4 {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.card p {
+  color: var(--color-text2);
+  line-height: 2;
+}

@@ -1,0 +1,102 @@
+.FaqSection {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.FaqSection .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: var(--box);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.FaqSection img {
+  width: 100%;
+}
+.FaqSection h3 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+.FaqSection span {
+  color: var(--primary-color);
+}
+/* FAQ item container */
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FAQ question */
+.faqItem {
+  background-color: var(--faq-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  transform-origin: top center;
+  position: relative;
+}
+
+.faqItem:hover {
+  transform: scale(1.02);
+}
+
+/* FAQ question text */
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.726);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* FAQ answer */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.3s ease-in-out, margin 0.3s ease-in-out;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.747);
+  line-height: 2;
+  font-style: italic;
+  margin: 0;
+  opacity: 0; /* Initially set to 0 */
+}
+
+/* Opened FAQ answer */
+.faqItem.open .answer {
+  max-height: 2000px; /* Set to a high value to ensure it expands fully */
+  padding: 10px;
+  margin: 10px 0;
+  opacity: 1; /* Set to 1 to fade in the answer */
+}
+
+/* FAQ icon animation */
+.faqItem i {
+  transition: transform 0.3s;
+}
+
+.faqItem.open i {
+  transform: rotate(180deg);
+}
+/* FAQ icon animation */
+.faqItem .question > svg {
+  transition: transform 0.3s;
+}
+
+.faqItem.open .question > svg {
+  transform: rotate(180deg);
+}

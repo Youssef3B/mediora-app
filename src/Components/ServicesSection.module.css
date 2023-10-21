@@ -1,0 +1,63 @@
+.ServicesSection {
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.ServicesSection h2 {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+.ServicesSection .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--box);
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: -800px;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--color-text);
+}
+.card p {
+  font-style: italic;
+  color: var(--color-text2);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.card h6 {
+  font-size: 14px;
+}

@@ -1,0 +1,42 @@
+.contact {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 60px;
+  padding-bottom: 160px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.contact img {
+  width: 90%;
+}
+.contact h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+.contact .card {
+  padding: 60px;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+.contact .flex {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.contact .right {
+  margin-left: 10px;
+}
+.contact .right h5 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+.contact .right p {
+  color: var(--color-text2);
+}

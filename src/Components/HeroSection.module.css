@@ -1,0 +1,33 @@
+/* HeroSection.module.css */
+.heroSection2 {
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 90px;
+  text-align: center;
+}
+.imageHome {
+  width: 1100px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+.heroSection2 h1 {
+  color: var(--color-text);
+  font-size: 77px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.heroSection2 p {
+  text-align: center;
+  color: var(--color-text2);
+  font-size: 18px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.heroSection2 span {
+  color: var(--primary-color);
+}
