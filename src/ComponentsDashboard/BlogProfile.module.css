@@ -1,0 +1,36 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.card h4 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+}
+.card p {
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card .flex {
+  margin-top: 32px;
+  display: flex;
+}
+.card .left {
+  margin-right: 14px;
+}

@@ -8,9 +8,11 @@ import Ready3 from "../Components/Ready3";
 import useLocalStorage from "use-local-storage";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import IconeDarkMode from "../Components/IconeDarkMode";
+import Up from "../Components/Up";
 
 export default function Services() {
-  const [theme, setTheme] = useLocalStorage("theme", "dark"); // Corrected useLocalStorage call
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -24,6 +26,9 @@ export default function Services() {
   }, []);
   return (
     <main className="body" data-theme={theme}>
+      <IconeDarkMode switchTheme={switchTheme} newTheme={theme} />
+      <Up />
+
       <NavBar switchTheme={switchTheme} newTheme={theme} />
       <Services2 switchTheme={switchTheme} newTheme={theme} />
       <Vision />

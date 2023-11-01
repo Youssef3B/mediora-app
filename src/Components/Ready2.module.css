@@ -20,3 +20,42 @@
 .Ready2 .grid span {
   color: var(--primary-color);
 }
+@media (max-width: 1300px) {
+  .Ready2 {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .Ready2 {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .Ready2 .grid {
+    background-color: var(--box);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .Ready2 .grid h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+}
+@media (max-width: 700px) {
+  .Ready2 .grid {
+    background-color: var(--box);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}

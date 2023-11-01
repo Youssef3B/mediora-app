@@ -32,3 +32,36 @@
 .ready span {
   color: var(--primary-color);
 }
+
+@media (max-width: 1300px) {
+  .ready {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .ready .grid {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 60px;
+    background-color: transparent;
+  }
+}
+@media (max-width: 900px) {
+  .ready {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .ready .grid {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 70px 60px;
+    background-color: transparent;
+  }
+}
+@media (max-width: 700px) {
+}

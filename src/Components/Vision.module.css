@@ -47,3 +47,43 @@
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.74);
 }
+
+@media (max-width: 1300px) {
+  .vision {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 60px;
+    padding-bottom: 80px;
+  }
+  .vision .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    background-color: var(--special);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .cardLeft {
+    margin-left: 0;
+  }
+
+  .cardRight {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .vision {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 700px) {
+}

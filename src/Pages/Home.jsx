@@ -14,26 +14,25 @@ import useLocalStorage from "use-local-storage";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import IconeDarkMode from "../Components/IconeDarkMode";
+import Up from "../Components/Up";
 
 export default function Home() {
-  const [theme, setTheme] = useLocalStorage("theme", "dark"); // Corrected useLocalStorage call
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 
-  useEffect(() => {
-    Aos.init({
-      offset: 200, // Trigger animations when the element is 200 pixels from the viewport
-      duration: 1000, // Animation duration in milliseconds
-    });
-  }, []);
-
   return (
     <main className="body" data-theme={theme}>
       <section className={styles.home}>
+        <IconeDarkMode switchTheme={switchTheme} newTheme={theme} />
+        <Up />
+
         <NavBar switchTheme={switchTheme} newTheme={theme} />
+
         {/* Pass 'theme' as a prop */}
         <HeroSection switchTheme={switchTheme} newTheme={theme} />
         <ServicesSection />

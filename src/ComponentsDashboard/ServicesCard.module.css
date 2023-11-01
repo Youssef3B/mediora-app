@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+.card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card img {
+  width: 100px;
+}
+.card h3 {
+  font-size: 30px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.card p {
+  margin-bottom: 12px;
+}
+.card .flex {
+  display: flex;
+  justify-content: center;
+}
+.card .flex .left {
+  margin-left: 10px;
+}

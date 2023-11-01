@@ -7,19 +7,19 @@ import Button from "./Button";
 import { NavLink } from "react-router-dom";
 const Experiences = [
   {
-    icone: <BsTrophy size={38} color="#ef3a5d" />,
+    icone: <BsTrophy size={32} color="#ef3a5d" />,
     title: "Our professional agency",
     description:
       "With 5 years of experience, we're a digital agency focused on enhancing brand visibility, engaging audiences, and driving growth.",
   },
   {
-    icone: <LuBrainCircuit size={38} color="#ef3a5d" />,
+    icone: <LuBrainCircuit size={32} color="#ef3a5d" />,
     title: "Our Creative Expertise",
     description:
       "We're a creative and a dedicated team, bringing innovation to your brand's online presence.",
   },
   {
-    icone: <FaStreetView size={38} color="#ef3a5d" />,
+    icone: <FaStreetView size={32} color="#ef3a5d" />,
     title: "Our customer service",
     description:
       "We offer exceptional digital solutions backed by outstanding support.",
@@ -57,6 +57,7 @@ export default function AboutSection({ newTheme }) {
                 : "/images/about-lightmode.png"
             }
             alt="logo"
+            loading="lazy"
           ></img>{" "}
         </div>
       </div>

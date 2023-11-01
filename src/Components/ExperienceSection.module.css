@@ -22,7 +22,7 @@
   object-fit: cover;
 }
 .ExperienceSection .img2 {
-  width: 100% !important;
+  width: 90% !important;
   height: 600px;
   object-position: center;
   object-fit: cover;
@@ -49,4 +49,52 @@
 .ExperienceSection p {
   color: var(--color-text2);
   line-height: 1.6;
+}
+
+@media (max-width: 1300px) {
+  .ExperienceSection {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 60px;
+    padding-bottom: 30px;
+  }
+  .ExperienceSection h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text);
+  }
+}
+@media (max-width: 900px) {
+  .nav .menu {
+    display: none;
+  }
+  nav .btn {
+    display: none;
+  }
+  .ExperienceSection .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .ExperienceSection h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text);
+  }
+}
+@media (max-width: 700px) {
+  .ExperienceSection .flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  .ExperienceSection .img2 {
+    width: 100% !important;
+    height: 600px;
+    object-position: center;
+    object-fit: cover;
+  }
 }

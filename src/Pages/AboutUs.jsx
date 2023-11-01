@@ -7,9 +7,11 @@ import Footer from "../Components/Footer";
 import useLocalStorage from "use-local-storage";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import IconeDarkMode from "../Components/IconeDarkMode";
+import Up from "../Components/Up";
 
 function AboutUs() {
-  const [theme, setTheme] = useLocalStorage("theme", "dark"); // Corrected useLocalStorage call
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -23,7 +25,11 @@ function AboutUs() {
   }, []);
   return (
     <main className="body" data-theme={theme}>
+      <IconeDarkMode switchTheme={switchTheme} newTheme={theme} />
+      <Up />
+
       <NavBar switchTheme={switchTheme} newTheme={theme} />
+
       <AboutSection switchTheme={switchTheme} newTheme={theme} />
       <FaqSection />
       <Ready3 switchTheme={switchTheme} newTheme={theme} />

@@ -3,6 +3,9 @@ import styles from "./HeroSection.module.css";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import { Link, NavLink } from "react-router-dom";
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import ParticleBg from "./ParticleBg";
 
 export default function HeroSection({ newTheme }) {
   return (
@@ -11,6 +14,7 @@ export default function HeroSection({ newTheme }) {
       data-aos-duration="1000"
       className={styles.heroSection2}
     >
+      <ParticleBg newTheme={newTheme} />
       <h1>
         Digital solutions for Empowering Your <span>Digital Journey</span>
       </h1>
@@ -29,6 +33,7 @@ export default function HeroSection({ newTheme }) {
             ? "/images/home-dark.png"
             : "/images/home-light.png"
         }
+        loading="lazy"
       ></img>
     </section>
   );

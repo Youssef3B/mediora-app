@@ -13,21 +13,28 @@
 .ServicesSection .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
+}
+.card img {
+  width: 80px;
 }
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--box);
   border-radius: 8px;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 20px;
   transition: 0.4s ease-in-out;
   position: relative;
   overflow: hidden;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(91, 80, 80, 0.24) 0px 3px 8px;
 }
 
 .card::before {
@@ -60,4 +67,44 @@
 }
 .card h6 {
   font-size: 14px;
+}
+@media (max-width: 1300px) {
+  .ServicesSection {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .ServicesSection h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+  }
+}
+@media (max-width: 900px) {
+  .ServicesSection {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .ServicesSection h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+  }
+  .ServicesSection .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .ServicesSection .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }

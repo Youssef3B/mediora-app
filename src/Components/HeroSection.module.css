@@ -6,14 +6,14 @@
   text-align: center;
 }
 .imageHome {
-  width: 1100px;
+  width: 1000px;
   display: block;
   margin: auto;
   margin-top: 60px;
 }
 .heroSection2 h1 {
   color: var(--color-text);
-  font-size: 77px;
+  font-size: 70px;
   font-weight: 700;
   margin-bottom: 30px;
   text-align: center;
@@ -21,8 +21,8 @@
 .heroSection2 p {
   text-align: center;
   color: var(--color-text2);
-  font-size: 18px;
-  width: 80%;
+  font-size: 16px;
+  width: 60%;
   display: block;
   margin: auto;
   line-height: 1.8;
@@ -30,4 +30,66 @@
 }
 .heroSection2 span {
   color: var(--primary-color);
+}
+@media (max-width: 1300px) {
+  .heroSection2 {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 90px;
+    text-align: center;
+  }
+  .imageHome {
+    width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .heroSection2 h1 {
+    color: var(--color-text);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .heroSection2 p {
+    text-align: center;
+    color: var(--color-text2);
+    font-size: 16px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .heroSection2 {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 90px;
+    text-align: center;
+  }
+  .imageHome {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .heroSection2 h1 {
+    color: var(--color-text);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .heroSection2 p {
+    text-align: center;
+    color: var(--color-text2);
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
 }

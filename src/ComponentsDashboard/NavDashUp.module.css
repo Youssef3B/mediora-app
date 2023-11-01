@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav .actions {
+  display: flex;
+}
+.nav input {
+  width: 500px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: var(--primary-color);
+}
+.nav input::placeholder {
+  color: white;
+}
+.nav .bg {
+  background-color: #dddddd;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+.nav .bg:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

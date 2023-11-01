@@ -4,24 +4,27 @@ import Logo from "./Logo";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 import useLocalStorage from "use-local-storage";
+import { MdDarkMode } from "react-icons/md";
+import { HiMenu } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function NavBar({ switchTheme, newTheme }) {
-  const [isOn, setIsOn] = useLocalStorage(false);
-
-  const toggleSwitch = () => {
-    setIsOn(!isOn);
-  };
-
-  const toggleThemeAndSwitch = () => {
-    switchTheme(); // Toggle the theme
-    toggleSwitch(); // Toggle the switch
-  };
-  const modeText = isOn ? "Dark Mode" : "Light Mode";
+  const [isOppen, setIsoppen] = useState(false);
+  function handleOppen() {
+    setIsoppen(() => !isOppen);
+  }
+  console.log(isOppen);
 
   return (
     <nav className={styles.nav}>
       <Logo newTheme={newTheme} />
-      <ul className={styles.menu}>
+      <ul
+        style={isOppen === true ? { display: "flex", right: 0 } : {}}
+        className={styles.menu}
+      >
+        <li onClick={handleOppen} className={styles.close}>
+          <AiOutlineClose size={42} />
+        </li>
         <li>
           <NavLink to="/" activeClassName={styles.active}>
             Home
@@ -44,16 +47,23 @@ export default function NavBar({ switchTheme, newTheme }) {
         </li>
       </ul>
 
-      <div
+      {/* <div
         className={`toggle-switch ${isOn ? "on" : "off"}`}
         onClick={toggleThemeAndSwitch}
       >
         <div className={`slider ${isOn ? "on" : "off"}`} />
-      </div>
+      </div> */}
 
-      <NavLink to="/contact">
-        <Button>Contact</Button>
-      </NavLink>
+      <div className={styles.btn}>
+        <NavLink to="/contact">
+          <Button>Let's Talk</Button>
+        </NavLink>
+      </div>
+      <div onClick={handleOppen} className={styles.res}>
+        <li>
+          <HiMenu size={32} />
+        </li>
+      </div>
     </nav>
   );
 }

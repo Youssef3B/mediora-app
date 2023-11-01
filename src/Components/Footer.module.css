@@ -50,3 +50,31 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+@media (max-width: 1300px) {
+  .Footer {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .Footer {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .Footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .Footer .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

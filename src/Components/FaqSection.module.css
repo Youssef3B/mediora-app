@@ -100,3 +100,30 @@
 .faqItem.open .question > svg {
   transform: rotate(180deg);
 }
+@media (max-width: 1300px) {
+  .FaqSection {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .FaqSection {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .FaqSection .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    background-color: var(--box);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+@media (max-width: 700px) {
+}

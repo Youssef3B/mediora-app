@@ -1,0 +1,40 @@
+.card2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+}
+.card2 img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+.card2 h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.card2 h4 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+}
+.card2 p {
+  line-height: 1.7;
+  font-weight: 500;
+}
+.card2 .flex {
+  margin-top: 32px;
+  display: flex;
+}
+.card2 .left {
+  margin-right: 14px;
+}

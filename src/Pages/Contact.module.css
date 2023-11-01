@@ -9,9 +9,21 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-.contact img {
-  width: 90%;
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
 }
+
+.contact .logo {
+  width: 100%;
+  animation: moveUpDown 4s linear infinite;
+}
+
 .contact h2 {
   font-size: 42px;
   margin-bottom: 20px;
@@ -39,4 +51,35 @@
 }
 .contact .right p {
   color: var(--color-text2);
+}
+@media (max-width: 1300px) {
+  .contact {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact .logo {
+    width: 90%;
+    animation: moveUpDown 4s linear infinite;
+  }
+}
+@media (max-width: 900px) {
+  .contact .logo {
+    width: 60%;
+    animation: moveUpDown 4s linear infinite;
+  }
+  .contact .card {
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  }
+}
+@media (max-width: 700px) {
 }

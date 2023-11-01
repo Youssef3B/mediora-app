@@ -9,9 +9,21 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-.Services2 img {
-  width: 88%;
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
 }
+
+.Services2 .logo {
+  width: 100%;
+  animation: moveUpDown 4s linear infinite;
+}
+
 .Services2 h3 {
   font-size: 44px;
   font-weight: 500;
@@ -21,7 +33,7 @@
 }
 .Services2 .card {
   display: flex;
-  padding: 30px 20px;
+  padding: 20px 10px;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -61,4 +73,27 @@
   margin-left: 14px;
   color: var(--color-text2);
   font-style: italic;
+}
+@media (max-width: 1300px) {
+  .Services2 {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .Services2 .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .Services2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 700px) {
 }

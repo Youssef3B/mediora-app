@@ -1,0 +1,64 @@
+.nav {
+  background-color: #303030;
+  position: fixed;
+  height: 100%;
+  width: 400px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 10px 30px;
+  color: white;
+}
+.nav a {
+  color: white;
+}
+.nav .up img {
+  width: 100px;
+}
+.nav .profile {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.nav .profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+.nav .profile h2 {
+  font-weight: 200;
+  font-size: 24px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.nav .profile h2 span {
+  font-weight: 600;
+}
+.nav .profile p {
+  color: rgba(255, 255, 255, 0.591);
+  font-size: 14px;
+}
+.nav ul li {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  margin-top: 12px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.nav ul li:hover {
+  background-color: var(--primary-color);
+}
+.nav h6 {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.616);
+}
+.active {
+  background-color: var(--primary-color);
+}

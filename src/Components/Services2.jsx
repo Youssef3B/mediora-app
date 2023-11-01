@@ -39,6 +39,7 @@ export default function Services2({ newTheme }) {
                 : "/images/experience2-dark.png"
             }
             alt="logo"
+            loading="lazy"
           ></img>
         </div>
         <div>

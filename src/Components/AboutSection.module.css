@@ -1,6 +1,6 @@
 .AboutSection h2 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 40px;
   color: var(--color-text);
 }
@@ -13,7 +13,7 @@
   margin-left: 20px;
 }
 .AboutSection h4 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: var(--color-text);
 }
@@ -34,4 +34,42 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 30px;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+}
+
+.AboutSection .logo {
+  width: 100%;
+  animation: moveUpDown 4s linear infinite;
+}
+@media (max-width: 1300px) {
+  .AboutSection {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 900px) {
+  .AboutSection {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .AboutSection .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 700px) {
 }
