@@ -4,6 +4,7 @@ import NavDash from "../ComponentsDashboard/NavDash";
 import NavDashUp from "../ComponentsDashboard/NavDashUp";
 import Title from "../ComponentsDashboard/Title";
 import ButtonDash from "../ComponentsDashboard/ButtonDash";
+import ProfileForm from "../ComponentsDashboard/ProfileForm";
 function DashboardProfile() {
   return (
     <main className="dashboard">
@@ -11,7 +12,7 @@ function DashboardProfile() {
       <section className="main">
         <NavDashUp />
         <Title>Profile</Title>
-        <ButtonDash>Add USer</ButtonDash>
+        <ProfileForm />
       </section>
     </main>
   );

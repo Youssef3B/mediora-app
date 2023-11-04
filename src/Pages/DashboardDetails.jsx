@@ -1,22 +1,22 @@
-import React from "react";
-import styles from "./DashboardSettings.module.css";
+import BlogProfile from "../ComponentsDashboard/BlogProfile";
+import ButtonDash from "../ComponentsDashboard/ButtonDash";
 import NavDash from "../ComponentsDashboard/NavDash";
 import NavDashUp from "../ComponentsDashboard/NavDashUp";
+import SettingsDetails from "../ComponentsDashboard/SettingsDetails";
 import Title from "../ComponentsDashboard/Title";
-import ButtonDash from "../ComponentsDashboard/ButtonDash";
-import RolesDash from "../ComponentsDashboard/RolesDash";
-function DashboardSettings() {
+
+function DashboardDetails() {
   return (
     <main className="dashboard">
       <NavDash />
       <section className="main">
         <NavDashUp />
         <Title>Settings</Title>
-        <ButtonDash>Add a Role</ButtonDash>
-        <RolesDash />
+        <ButtonDash>Add a New Post</ButtonDash>
+        <SettingsDetails />
       </section>
     </main>
   );
 }
 
-export default DashboardSettings;
+export default DashboardDetails;

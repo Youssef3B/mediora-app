@@ -1,0 +1,52 @@
+/* CoolTable.module.css */
+.cool-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cool-table th,
+.cool-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cool-table th {
+  background-color: #f2f2f2;
+}
+
+.cool-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cool-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.cool-table td button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.cool-table td button:hover {
+  background-color: #45a049;
+}
+
+/* Add a media query for responsiveness */
+@media (max-width: 768px) {
+  .cool-table {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .cool-table th,
+  .cool-table td {
+    padding: 4px; /* Reduce padding for smaller screens */
+  }
+
+  .cool-table td button {
+    padding: 4px 8px; /* Reduce button padding for smaller screens */
+  }
+}

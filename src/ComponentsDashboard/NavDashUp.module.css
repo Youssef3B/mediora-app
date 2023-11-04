@@ -23,6 +23,7 @@
 .nav .bg {
   background-color: #dddddd;
   margin-left: 10px;
+  color: black;
   width: 40px;
   height: 40px;
   display: flex;
@@ -35,7 +36,27 @@
   font-weight: 600;
   transition: 0.4s ease-in-out;
 }
+.active {
+  background-color: var(--primary-color);
+  margin-left: 10px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+
 .nav .bg:hover {
   background-color: var(--primary-color);
+  color: white;
+}
+.search {
   color: white;
 }

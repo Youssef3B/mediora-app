@@ -1,0 +1,49 @@
+.roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 30px;
+}
+.card h2 {
+  font-size: 30px;
+  color: #ef3a5d;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.card p {
+  color: rgba(0, 0, 0, 0.71);
+  margin-bottom: 8px;
+  font-style: italic;
+  font-weight: 600;
+}
+.card ul li {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+}
+.flex {
+  display: flex;
+  margin-top: 20px;
+}
+.flex button {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.flex button:hover {
+  background-color: #ef3a5d;
+  color: white;
+}

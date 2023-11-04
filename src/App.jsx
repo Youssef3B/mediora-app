@@ -19,6 +19,8 @@ import DashboardBlog from "./Pages/DashboardBlog";
 import DashboardSettings from "./Pages/DashboardSettings";
 import DashboardProfile from "./Pages/DashboardProfile";
 import DashboardMessages from "./Pages/DashboardMessages";
+import DashboardDetails from "./Pages/DashboardDetails";
+import Login from "./Pages/Login";
 
 function App() {
   useEffect(() => {
@@ -47,7 +49,8 @@ function App() {
         <Route path="/dashboard/setting" element={<DashboardSettings />} />
         <Route path="/dashboard/profile" element={<DashboardProfile />} />
         <Route path="/dashboard/messages" element={<DashboardMessages />} />
-        {/* Add a catch-all route for the root path */}
+        <Route path="/dashboard/details" element={<DashboardDetails />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>

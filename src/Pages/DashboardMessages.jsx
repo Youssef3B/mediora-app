@@ -4,6 +4,7 @@ import NavDash from "../ComponentsDashboard/NavDash";
 import NavDashUp from "../ComponentsDashboard/NavDashUp";
 import Title from "../ComponentsDashboard/Title";
 import ButtonDash from "../ComponentsDashboard/ButtonDash";
+import MessagesDashboard from "../ComponentsDashboard/MessagesDashboard";
 function DashboardMessages() {
   return (
     <main className="dashboard">
@@ -11,7 +12,7 @@ function DashboardMessages() {
       <section className="main">
         <NavDashUp />
         <Title>Messages</Title>
-        <ButtonDash>Add USer</ButtonDash>
+        <MessagesDashboard />
       </section>
     </main>
   );
